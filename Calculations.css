@@ -1,0 +1,145 @@
+.calculations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #333;
+  }
+  
+  .calculations-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .calculations-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  
+  .header-icon {
+    font-size: 2rem;
+    color: #4ca1af;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  .calculations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .calculator-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .calculator-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  .card-content h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .card-content p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .card-link:hover {
+    color: #4ca1af;
+  }
+  
+  .arrow-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .card-link:hover .arrow-icon {
+    transform: translateX(5px);
+  }
+  
+  .calculations-info {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .calculations-info h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .calculations-info p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .calculations-header h1 {
+      font-size: 2rem;
+    }
+    
+    .calculations-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .calculator-card {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .calculations-container {
+      padding: 1.5rem;
+    }
+    
+    .calculations-header h1 {
+      font-size: 1.8rem;
+    }
+    
+    .subtitle {
+      font-size: 1rem;
+    }
+  }

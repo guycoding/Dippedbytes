@@ -1,0 +1,230 @@
+.home-container {
+    color: #f8f8f8;
+    padding: 0;
+    margin-top: -7rem; /* Compensate for navbar height */
+}
+
+.hero-section {
+    background-image: 
+        linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.6)), 
+        url('C:/Users/charl/OneDrive/Desktop/Projects/dippedbytes/src/assets/backround.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7rem 2rem 2rem; /* Account for navbar */
+    position: relative;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    color: #f8f8f8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 200;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    color: #f8f8f8;
+    background: rgba(76, 161, 175, 0.8);
+    padding: 1rem 2.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    background: rgba(76, 161, 175, 1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Glassmorphism content cards */
+.content-section {
+    padding: 4rem 2rem;
+    background: rgba(44, 62, 80, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3rem;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .cta-button {
+        padding: 0.9rem 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .content-section {
+        padding: 3rem 1.5rem;
+    }
+}
+.hero-cta-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.cta-button.secondary {
+    background: transparent;
+    border: 1px solid #f8f8f8;
+}
+
+.cta-button.secondary:hover {
+    background: rgba(248, 248, 248, 0.1);
+}
+
+.about-preview, 
+.core-services, 
+.technology-showcase {
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.inline-link {
+    color: #4ca1af;
+    text-decoration: none;
+    font-weight: 400;
+    border-bottom: 1px dashed rgba(76, 161, 175, 0.5);
+    transition: all 0.3s ease;
+}
+
+.inline-link:hover {
+    color: #3a7d8a;
+    border-bottom-color: #4ca1af;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 2rem;
+    color: #4ca1af;
+    margin-bottom: 1rem;
+}
+
+.service-card h4 {
+    color: #f8f8f8;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.features-list li {
+    margin-bottom: 1rem;
+    padding-left: 2.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.feature-bullet {
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: #4ca1af;
+}
+
+.cta-box {
+    background: rgba(76, 161, 175, 0.1);
+    border: 1px solid rgba(76, 161, 175, 0.3);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.cta-box p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-cta-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-list {
+        padding: 0 1rem;
+    }
+}

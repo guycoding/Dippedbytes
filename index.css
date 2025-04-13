@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  }
+body{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  min-height: 100vh;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+  h1 {
+    font-size: 1.8rem; /* Adjust heading sizes proportionally */
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Very small devices (e.g., iPhone 5/SE) */
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 13px; /* Even smaller font size */
+  }
+}
